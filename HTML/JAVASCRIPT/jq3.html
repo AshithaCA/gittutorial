@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jqlib.js"></script>
+</head>
+<body>
+    <!-- <p>hello<b>hi</b></p>
+    <input id="i" type="text"><br>
+    <button id="t">text</button>
+    <button id="h">html</button>
+    <button id="v">val</button>
+    <button id="a">atter</button> -->
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("#t").click(function(){
+                var c=$("p").text()
+                alert(c)
+            })
+            $("#h").click(function(){
+                var c=$("p").html()
+                alert(c)
+            })
+            $("#v").click(function(){
+                var c=$("#i").val()
+                alert(c)
+            })
+            $("#a").click(function(){
+                var c=$("#i").attr("id")
+                alert(c)
+            })
+        });
+    </script> -->
+
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("#t").click(function(){
+                $("p").text("<b>welcome</b>")
+            })
+            $("#h").click(function(){
+                $("p").html("<b>welcome</b>")
+            })
+            $("#v").click(function(){
+                $("#i").val("mmmmmmmmmmmmmm")
+            })
+            $("#a").click(function(){
+                $("#i").attr("type","radio")
+
+            })
+        });
+    </script> -->
+    <p id="n">hellovbnm,vbnm,bnm</p>
+    <button id="ap">append</button>
+    <button id="pre">prepend</button>
+    <button id="af">after</button>
+    <button id="bef">before</button>
+    <script>
+        $(document).ready(function(){
+            $("#ap").click(function(){
+                $("p").append("<b>hai</b>")
+            })
+            $("#pre").click(function(){
+                $("p").prepend("<b>hai</b>")
+            })
+            $("#af").click(function(){
+                $("p").after("<b>hai</b>")
+            })
+           $("#bef").click(function(){
+                $("p").before("<b>hai</b>")
+            })
+        });
+
+    </script>
+</body>
+</html>

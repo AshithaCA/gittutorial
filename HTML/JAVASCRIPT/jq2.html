@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jqlib.js"></script>
+</head>
+<body>
+    <button id="n">hide</button>
+    <button id="d">show</button>
+    <button id="l">toggle</button>
+    <button id="f">fadeIn</button>
+    <button id="f0">fadeOut</button>
+    <button id="f1">fadeto</button>
+    <button id="f2">fadeToggle</button>
+    <div id="d1" style="background-color: blue; width: 100px;height: 100px;"></div><br>
+    <div id="d2" style="background-color: blue; width: 100px;height: 100px;"></div><br>
+    <div id="d3" style="background-color: blue; width: 100px;height: 100px;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#n").click(function(){
+                $("#d1").hide()
+                $("#d2").hide("slow")
+                $("#d3").hide(3000)
+            })
+
+            $("#d").click(function(){
+                $("#d1").show()
+                $("#d2").show("slow")
+                $("#d3").show(3000)
+            })
+            $("#l").click(function(){
+                $("#d1").toggle()
+                $("#d2").toggle("slow")
+                $("#d3").toggle(3000)
+            })
+            $("#f").click(function(){
+                    $("#d1").fadeIn()
+                    $("#d2").fadeIn("slow")
+                    $("#d3").fadeIn(3000)
+                })
+            $("#f0").click(function(){
+                    $("#d1").fadeOut()
+                    $("#d2").fadeOut("slow")
+                    $("#d3").fadeOut(3000)
+                })
+            $("#f1").click(function(){
+                    $("#d1").fadeTo()
+                    $("#d2").fadeTo("slow",0.1)
+                    $("#d3").fadeTo("slow",0.5)
+                })
+            $("#f2").click(function(){
+                    $("#d1").fadeToggle()
+                    $("#d2").fadeToggle("slow")
+                    $("#d3").fadeToggle(3000)
+                })
+        });
+        
+    </script>
+</body>
+</html>

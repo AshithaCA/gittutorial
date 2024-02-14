@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        alert('ERROR')
+    </script> -->
+    
+    <!-- <script>
+        var x;
+        if(confirm("Do you want to delete!")==true)
+        {
+            x="you pressed ok!";
+        }
+        else
+        {
+            x="you pressed cancel!";
+        }
+        document.write(x)
+    </script> -->
+
+    <!-- <h1 id="demo">Hello Hai By By</h1>
+    <script>
+        var person=prompt("please enter your name","name");
+        if (person!=null)
+        {
+            document.getElementById("demo").innerHTML= "Hello" + person + "How are you?";
+        }
+    </script> -->
+
+    <!-- expectional handling ........................................................................................-->
+
+    <script>
+        var a=100;
+        var b=0
+        try
+        {
+            if(b==0)
+            {
+                throw("divide by zero error")
+            }
+            alert("value of varable a is : " +a/b);
+        }
+        catch(t){
+            alert("error: " +t);
+            alert("error: " +t.description);
+        }
+        finally{
+
+            alert("finally block will always execute");
+            
+        }
+    </script>
+</body>
+</html>

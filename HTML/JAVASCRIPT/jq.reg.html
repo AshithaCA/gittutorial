@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jqlib.js"></script>
+</head>
+<h1>REGISTRATION FORM</h1>
+<body style="text-align: center;">
+    <label for="">Name:</label>
+    <input id="n" type="text"><br><br>
+    <label for="">EMail:</label>
+    <input id="e" type="text"><br><br>
+    <label for="">Phone:</label>
+    <input id="no" type="number"><br><br>
+    <button>Submit</button>
+    <br>
+    <br>
+    <table width="50%" border="1px">
+        <tr>
+            <th>Name</th>
+            <th>EMail</th>
+            <th>Phone</th>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#n").show() 
+    
+            })
+        });
+    </script>
+</body>
+</html>

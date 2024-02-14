@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jqlib.js"></script>
+</head>
+<body>
+    <button id="q">queue</button>
+    <button id="c">callback</button>
+    <button id="ch">chain</button>
+<div style="background-color: rebeccapurple;width:100px;height:100px"></div>
+<p id="p">hellllloooooo</p>
+<script>
+    $(document).ready(function(){
+        $("#q").click(function(){
+            var div=$("div");
+            div.animate({height:'300px',opacity:'0.4'},"slow");
+            div.animate({width:'300px',opacity:'0.8'},"slow");
+            div.animate({height:'100px',opacity:'0.4'},"slow");
+            div.animate({width:'100px',opacity:'0.8'},"slow");
+        });
+        $("#c").click(function(){
+            $("div").hide("slow",function(){
+                alert('your div is going hidden')
+            })
+        });
+        $("#ch").click(function(){
+            $("#p").css("color","red").slideUp(2000).slideDown(2000);
+        });
+    });
+</script>
+</body>
+</html>
